@@ -1,25 +1,2 @@
 #!/bin/bash
-
-# Define the source directory as the current working directory
-src_dir=$(pwd)
-
-# Define the destination directory as the parent of the working directory
-dest_dir=$(dirname "$src_dir")
-
-# Find all HTML files in the source directory
-for file in "$src_dir"/*.html; do
-  # Extract the filename from the path
-  filename=$(basename "$file")
-  
-  # Check if the file already exists in the destination directory
-  if [ -f "$dest_dir/$filename" ]; then
-    # Check if the file in the destination directory is older than the file in the source directory
-    if [ "$file" -nt "$dest_dir/$filename" ]; then
-      # Copy the file from the source directory to the destination directory
-      cp "$file" "$dest_dir"
-    fi
-  else
-    # Copy the file from the source directory to the destination directory
-    cp "$file" "$dest_dir"
-  fi
-done
+cp ./*.html ..
