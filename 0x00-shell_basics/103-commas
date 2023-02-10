@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -A | awk 'BEGIN { ORS = "," } { print }' | sed 's/,[,]∗[,]∗$/\n\1/'
+ls -la -m -p
