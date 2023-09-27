@@ -7,10 +7,13 @@ apt-get -y install nginx
 touch /var/www/html/index.html
 echo "Hello World!" > /var/www/html/index.html
 
-sed -i 's/listen 80 default_server;/listen 80;/' /etc/nginx/sites-available/default
+printf %s "server {
+    listen		80 default_server;
+    listen		[::]:80 default_server;
 
-# Restart Nginx (without using systemctl)
-/etc/init.d/nginx restart
+    root		/var/www/html;
+    index		index.html index.htm index.nginx-debian.html;
+}
+" > /etc/nginx/sites-available/default
 
-# Verify Nginx status
-nginx_status=$(sudo /etc/init.d/nginx status)
+service nginx restart
