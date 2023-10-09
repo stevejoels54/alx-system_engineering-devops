@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # Nginx installation not listening on port 80
 
-new_port="listen 80 default_server;"
-old_port="listen 8080 default_server;"
-sed -i "s/$old_port/$new_port/" /etc/nginx/sites-enabled/default
+newport="80 default_server"
+oldport="8080 default_server"
+sed -i "s/$oldport/$newport/" /etc/nginx/sites-enabled/default
 
 service nginx restart
