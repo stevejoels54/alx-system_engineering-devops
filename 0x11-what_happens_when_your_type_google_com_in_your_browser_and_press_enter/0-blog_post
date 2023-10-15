@@ -1,0 +1,45 @@
+Ever pondered what unfolds when you enter www.google.com? Take a deep dive into this comprehensive article where we unravel the mysteries. 🚀 #DevOps #Backend #InterviewPrep #WebDevelopment #TechExplained
+
+![](RackMultipart20231015-1-6kesd_html_c8a5650e930545a1.png)
+
+Introduction:
+
+Have you ever wondered what happens when you type "https://www.google.com" in your browser and hit Enter? The journey of a web request involves several intricate steps and technologies that work seamlessly to bring you the website you desire. In this blog post, we will break down the process into key components, from the moment you initiate the request to the moment you see Google's homepage.
+
+1. DNS Request:
+
+The journey begins with the Domain Name System (DNS) request. When you enter "www.google.com," your browser doesn't know the actual IP address of Google's servers. It sends a DNS request to a DNS server, which translates the human-readable domain name into an IP address, such as 172.217.3.100.
+
+2. TCP/IP:
+
+With the IP address in hand, your browser establishes a Transmission Control Protocol (TCP) connection with the server using the Internet Protocol (IP). This ensures reliable data transfer between your computer and the server.
+
+3. Firewall:
+
+Firewalls are your digital security guards. They filter incoming and outgoing network traffic to protect your computer from potentially harmful data. The firewall checks whether the incoming data is safe and allows or denies access accordingly.
+
+4. HTTPS/SSL:
+
+In today's security-conscious environment, most websites use HTTPS (Hypertext Transfer Protocol Secure) to encrypt data in transit. This encryption is made possible through SSL (Secure Sockets Layer) or its modern successor, TLS (Transport Layer Security). Before any data is exchanged, your browser and the web server perform a secure handshake, ensuring that your communication is encrypted and secure.
+
+5. Load-Balancer:
+
+For popular websites like Google, there are numerous servers scattered across different locations. Load balancers distribute incoming web traffic evenly across these servers to optimize performance and reliability. This ensures that no single server becomes overwhelmed with requests.
+
+6. Web Server:
+
+Once the request passes through the load balancer, it reaches the web server. The web server processes the request, retrieving the necessary HTML, CSS, and JavaScript files to construct the webpage.
+
+7. Application Server:
+
+Some websites, like Google, use application servers to handle dynamic content, user authentication, and more. These servers execute the application's code and retrieve data from databases if needed.
+
+8. Database:
+
+In the case of web applications that rely on data, a database server is involved. It stores, retrieves, and manages data for the application. When you search on Google, for example, the database server retrieves relevant search results.
+
+Conclusion:
+
+The journey of a web request from your browser to the server is a complex and interconnected process. Understanding these components, such as DNS, TCP/IP, firewalls, HTTPS/SSL, load balancers, web servers, application servers, and databases, is essential for any software engineer or IT professional. It is a fascinating journey through the layers of technology and security measures, ensuring that you can seamlessly access your favorite websites.
+
+So next time you enter a URL in your browser, remember the intricate ballet of technology happening behind the scenes to deliver the webpage you see on your screen.
