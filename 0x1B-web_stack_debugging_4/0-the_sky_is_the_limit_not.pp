@@ -11,5 +11,5 @@ service { 'restart-nginx':
   name    => 'nginx',
   ensure  => 'running',
   enable  => true,
-  require => Exec['fix--for-nginx'],
+  require => Exec['fix-nginx-limit'],
 }
